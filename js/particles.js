@@ -4,8 +4,6 @@ const areaPerParticle = 9000;
 const minFocalLength = 800;
 const nearZ = 0.4;
 const farZ = 2.2;
-const cameraRange = 0.06;
-const smoothing = 4;
 const forwardSpeed = 0.01;
 const sinkSpeed = 6;
 const swayAmount = 8;
@@ -17,9 +15,6 @@ if (!matchMedia("(prefers-reduced-motion: reduce)").matches) {
     const context = canvas.getContext("2d");
     const sprites = tints.map(createSprite);
     const particles = [];
-    const pointer = { x: 0, y: 0 };
-    const target = { x: 0, y: 0 };
-    const camera = { x: 0, y: 0 };
     let width = 0;
     let height = 0;
     let focalLength = minFocalLength;
@@ -41,8 +36,8 @@ if (!matchMedia("(prefers-reduced-motion: reduce)").matches) {
 
     function place(particle) {
         particle.z = nearZ + Math.random() * (farZ - nearZ);
-        particle.x = ((Math.random() - 0.5) * width * particle.z) / focalLength + camera.x;
-        particle.y = ((Math.random() - 0.5) * height * particle.z) / focalLength + camera.y;
+        particle.x = ((Math.random() - 0.5) * width * particle.z) / focalLength;
+        particle.y = ((Math.random() - 0.5) * height * particle.z) / focalLength;
         particle.age = 0;
     }
 
@@ -75,20 +70,9 @@ if (!matchMedia("(prefers-reduced-motion: reduce)").matches) {
 
     new ResizeObserver(resize).observe(landing);
 
-    window.addEventListener("pointermove", (event) => {
-        target.x = event.clientX / innerWidth - 0.5;
-        target.y = event.clientY / innerHeight - 0.5;
-    });
-
     requestAnimationFrame(function frame(now) {
         const seconds = Math.min((now - lastTime) / 1000, maxFrameSeconds);
         lastTime = now;
-
-        const ease = 1 - Math.exp(-seconds * smoothing);
-        pointer.x += (target.x - pointer.x) * ease;
-        pointer.y += (target.y - pointer.y) * ease;
-        camera.x = pointer.x * cameraRange;
-        camera.y = pointer.y * cameraRange;
 
         context.clearRect(0, 0, width, height);
         for (const particle of particles) {
@@ -98,8 +82,8 @@ if (!matchMedia("(prefers-reduced-motion: reduce)").matches) {
             particle.age += seconds;
 
             const scale = focalLength / particle.z;
-            const x = width / 2 + (particle.x - camera.x) * scale;
-            const y = height / 2 + (particle.y - camera.y) * scale;
+            const x = width / 2 + particle.x * scale;
+            const y = height / 2 + particle.y * scale;
             const diameter = particle.size * scale;
 
             if (particle.z < nearZ || x < -diameter || x > width + diameter || y < -diameter || y > height + diameter) {
