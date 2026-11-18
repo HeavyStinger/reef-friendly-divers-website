@@ -7,12 +7,13 @@
     <meta name="description" content="Guided scuba dives on the Belize Barrier Reef, leaving from Caye Caulker.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&amp;family=Barlow+Condensed:wght@700&amp;display=swap">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/particles.js" defer></script>
     <script src="js/menu.js" defer></script>
     <script src="js/testimonials.js" defer></script>
+    <script src="js/packages.js" defer></script>
 </head>
 <body>
     <div class="landing">
@@ -31,10 +32,10 @@
                     <a href="services.html">Services</a>
                     <a href="about.html">About Us</a>
                     <a href="gallery.html">Gallery</a>
-                    <a href="belizes-waters.html">Belize's Waters</a>
-                    <a href="#contact">Contact</a>
+                    <a href="#sites">Belize's Waters</a>
+                    <a href="contact.html">Contact</a>
                 </nav>
-                <a class="button button-secondary" href="#contact">Book now</a>
+                <a class="button button-secondary" href="contact.html">Book now</a>
             </div>
         </header>
         <main class="hero">
@@ -42,8 +43,8 @@
                 <h1>Scuba diving in Caye Caulker</h1>
                 <p>Guided scuba dives on the Belize Barrier Reef, leaving from Caye Caulker.</p>
                 <div class="hero-actions">
-                    <a class="button button-primary" href="#contact">Book my dive today</a>
-                    <a class="button button-secondary" href="packages.html">Explore packages</a>
+                    <a class="button button-primary" href="contact.html">Book my dive today</a>
+                    <a class="button button-secondary" href="#packages">Explore packages</a>
                 </div>
             </div>
             <dl class="stats">
@@ -121,5 +122,353 @@
             </div>
         </section>
     </div>
+    <section class="depth" aria-labelledby="depth-title">
+        <h2 id="depth-title">The same habits at every depth.</h2>
+        <ol class="stations">
+            <li>
+                <p class="meter">0 m</p>
+                <div>
+                    <h3>On the boat</h3>
+                    <p>Reef-safe sunscreen only, and sulfate-free soap for your mask. The briefing covers every hand signal and every rule below.</p>
+                </div>
+            </li>
+            <li>
+                <p class="meter">3 m</p>
+                <div>
+                    <h3>On the way down</h3>
+                    <p>We check your buoyancy over sand, well before the reef comes into view.</p>
+                </div>
+            </li>
+            <li>
+                <p class="meter">12 m</p>
+                <div>
+                    <h3>On the reef</h3>
+                    <p>Look, don't touch. No chasing, no feeding, fins clear of the coral.</p>
+                </div>
+            </li>
+            <li>
+                <p class="meter">5 m</p>
+                <div>
+                    <h3>Safety stop</h3>
+                    <p>Three minutes, hovering, nothing to hold on to. Nothing leaves the water.</p>
+                </div>
+            </li>
+        </ol>
+    </section>
+    <section class="packages" id="packages" aria-labelledby="packages-title">
+        <h2 id="packages-title">Start shallow. Go as deep as you like.</h2>
+        <p class="packages-intro">Pick a dive on the ladder, or tap its spot on the map.</p>
+        <div class="packages-layout">
+            <figure class="map">
+                <div class="map-frame">
+                    <svg viewBox="0 0 600 500" role="img" aria-label="Map: Caye Caulker inside the barrier reef, with Turneffe Atoll and the Blue Hole on Lighthouse Reef out to the southeast">
+                        <defs>
+                            <filter id="m-rough" x="-20" y="-20" width="640" height="540" filterUnits="userSpaceOnUse">
+                                <feTurbulence type="fractalNoise" baseFrequency="0.06" numOctaves="3" seed="7"/>
+                                <feDisplacementMap in="SourceGraphic" scale="5" xChannelSelector="R" yChannelSelector="G"/>
+                            </filter>
+                            <path id="m-shelf" d="M-20 -20H250V-10C247 30 245 62 250 95S256 165 254 200S244 290 237 345S224 460 220 510V520H-20Z"/>
+                            <path id="m-barrier" class="m-barrier" pathLength="100" d="M250 -10C247 30 245 62 250 95S256 165 254 200S244 290 237 345S224 460 220 510"/>
+                            <path id="m-turneffe" d="M358 242C362 232 374 232 382 246C392 266 396 284 399 304C404 334 408 372 410 410C412 450 410 490 408 520H330C326 480 326 440 330 400C334 360 338 322 344 296C348 274 353 256 358 242Z"/>
+                            <path id="m-lighthouse" d="M496 238C500 226 512 226 518 240C530 262 536 290 541 318C548 360 555 420 549 460C544 486 529 497 513 495C496 492 487 470 486 440C485 400 487 340 490 300C492 274 493 252 496 238Z"/>
+                            <g id="m-cayes">
+                                <path d="M206 -10H236C232 6 222 22 211 32C206 22 205 8 206 -10Z"/>
+                                <path d="M165 55C170 68 173 95 172 120C171 140 168 156 164 170H153C146 163 136 155 130 146C126 138 134 128 132 118C130 106 139 94 148 80C154 70 160 60 165 55Z"/>
+                                <path d="M162 178C160 195 157 215 152 232C149 242 145 249 140 252C138 244 139 230 142 215C145 200 148 186 151 178Z"/>
+                                <path d="M140 280C144 290 143 305 137 318C133 312 132 296 135 284C136 281 138 279 140 280Z"/>
+                            </g>
+                        </defs>
+                        <rect class="m-deep" width="600" height="500"/>
+                        <use class="m-slope" href="#m-shelf"/>
+                        <g class="m-shallow">
+                            <use href="#m-shelf"/>
+                            <use href="#m-turneffe"/>
+                            <use href="#m-lighthouse"/>
+                        </g>
+                        <g class="m-flats">
+                            <use href="#m-barrier" x="-7"/>
+                            <use href="#m-cayes"/>
+                        </g>
+                        <g class="m-reef">
+                            <use href="#m-barrier"/>
+                            <use href="#m-turneffe"/>
+                            <use href="#m-lighthouse"/>
+                        </g>
+                        <g class="m-land">
+                            <use href="#m-cayes"/>
+                            <path d="M368 246L375 252L381 264L387 280L392 300L396 322L398 344L392 350L389 338L384 332L386 318L380 308L381 296L374 288L373 276L366 270L362 262ZM399 360L401 380L403 404L404 428L405 452L404 476L403 500L402 520H390L392 500L388 488L392 472L386 460L390 444L384 432L390 418L388 404L394 392L392 376ZM356 274L352 290L348 306L345 322L342 340L341 356L348 352L350 338L356 330L354 316L360 304L358 290L362 282ZM339 372L337 392L335 412L334 432L333 456L333 480L334 500L335 520H346L344 500L348 486L343 470L349 456L344 440L350 426L345 410L348 394L344 380ZM366 392L374 398L378 410L376 424L381 436L378 450L370 456L362 450L364 438L358 428L362 414L360 402Z"/>
+                            <path d="M504 246L509 252L510 262L506 270L501 264L502 254ZM533 470L539 468L542 474L538 480L532 478ZM494 444L498 448L499 458L496 466L492 458L492 450Z"/>
+                        </g>
+                        <circle class="m-hole" cx="516" cy="405" r="12"/>
+                        <g class="m-routes">
+                            <path d="M176 205C192 207 210 216 220 232"/>
+                            <path d="M176 205C194 236 184 288 198 320"/>
+                            <path d="M176 205C202 186 234 152 252 126Q257 118 264 112"/>
+                            <path d="M176 205C218 198 246 190 266 190C350 190 450 222 494 300Q512 340 516 405"/>
+                        </g>
+                        <path class="m-route" data-package="discover" pathLength="1" d="M176 205C192 207 210 216 220 232"/>
+                        <path class="m-route" data-package="certify" pathLength="1" d="M176 205C194 236 184 288 198 320"/>
+                        <path class="m-route" data-package="explore" pathLength="1" d="M176 205C202 186 234 152 252 126Q257 118 264 112"/>
+                        <path class="m-route" data-package="deep" pathLength="1" d="M176 205C218 198 246 190 266 190C350 190 450 222 494 300Q512 340 516 405"/>
+                        <path class="m-dock" d="M155 205H176"/>
+                        <text class="m-label" x="118" y="150" text-anchor="end">Caye Caulker</text>
+                        <text class="m-label" x="198" y="22" text-anchor="end">Ambergris Caye</text>
+                        <text class="m-label" x="588" y="186" text-anchor="end">Lighthouse Reef</text>
+                        <text class="m-label" x="312" y="470" text-anchor="end">Turneffe<tspan x="312" dy="18">Atoll</tspan></text>
+                        <path class="m-north" d="M40 452L47 478L40 472L33 478Z"/>
+                        <text class="m-label" x="40" y="446" text-anchor="middle">N</text>
+                    </svg>
+<button class="pin pin-discover is-active" type="button" data-package="discover" aria-pressed="true"><span class="pin-dot"></span><span class="pin-text"><span class="pin-place">Sheltered shallows</span><span class="pin-dive">Discover Scuba</span></span></button>
+                    <button class="pin pin-certify" type="button" data-package="certify" aria-pressed="false"><span class="pin-dot"></span><span class="pin-text"><span class="pin-place">Training reef</span><span class="pin-dive">Open Water Course</span></span></button>
+                    <button class="pin pin-explore" type="button" data-package="explore" aria-pressed="false"><span class="pin-dot"></span><span class="pin-text"><span class="pin-place">Barrier reef</span><span class="pin-dive">Reef Dive</span></span></button>
+                    <button class="pin pin-deep" type="button" data-package="deep" aria-pressed="false"><span class="pin-dot"></span><span class="pin-text"><span class="pin-place">Blue Hole</span><span class="pin-dive">Blue Hole Day Trip</span></span></button>
+                </div>
+                <figcaption>Schematic map, not to scale.</figcaption>
+            </figure>
+            <ol class="steps">
+                <li class="step is-active" data-package="discover">
+                    <button class="step-select" type="button" data-package="discover" aria-pressed="true">
+                        <span class="step-level">Try</span>
+                        <span class="step-name">Discover Scuba</span>
+                        <span class="step-depth">Down to 12 m</span>
+                        <span class="step-price">US$95</span>
+                        <i class="bi bi-chevron-down step-arrow" aria-hidden="true"></i>
+                    </button>
+                    <div class="detail">
+                        <div class="detail-inner">
+                            <p>Your first dive, with a guide at your side. No certification needed.</p>
+                            <dl class="facts">
+                                <div><dt>Time</dt><dd>3 h</dd></div>
+                                <div><dt>Level</dt><dd>Beginner</dd></div>
+                            </dl>
+                            <a class="button button-primary" href="contact.html">Book Discover Scuba</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="step" data-package="certify">
+                    <button class="step-select" type="button" data-package="certify" aria-pressed="false">
+                        <span class="step-level">Certify</span>
+                        <span class="step-name">Open Water Course</span>
+                        <span class="step-depth">Down to 18 m</span>
+                        <span class="step-price">US$420</span>
+                        <i class="bi bi-chevron-down step-arrow" aria-hidden="true"></i>
+                    </button>
+                    <div class="detail">
+                        <div class="detail-inner">
+                            <p>Learn the skills and earn your card in three days.</p>
+                            <dl class="facts">
+                                <div><dt>Time</dt><dd>3 days</dd></div>
+                                <div><dt>Level</dt><dd>Beginner</dd></div>
+                            </dl>
+                            <a class="button button-primary" href="contact.html">Book Open Water Course</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="step" data-package="explore">
+                    <button class="step-select" type="button" data-package="explore" aria-pressed="false">
+                        <span class="step-level">Explore</span>
+                        <span class="step-name">Reef Dive</span>
+                        <span class="step-depth">Down to 18 m</span>
+                        <span class="step-price">US$130</span>
+                        <i class="bi bi-chevron-down step-arrow" aria-hidden="true"></i>
+                    </button>
+                    <div class="detail">
+                        <div class="detail-inner">
+                            <p>Two guided dives on the reef for certified divers.</p>
+                            <dl class="facts">
+                                <div><dt>Time</dt><dd>4 h</dd></div>
+                                <div><dt>Level</dt><dd>Open Water</dd></div>
+                            </dl>
+                            <a class="button button-primary" href="contact.html">Book Reef Dive</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="step" data-package="deep">
+                    <button class="step-select" type="button" data-package="deep" aria-pressed="false">
+                        <span class="step-level">Go deep</span>
+                        <span class="step-name">Blue Hole Day Trip</span>
+                        <span class="step-depth">Down to 40 m</span>
+                        <span class="step-price">US$380</span>
+                        <i class="bi bi-chevron-down step-arrow" aria-hidden="true"></i>
+                    </button>
+                    <div class="detail">
+                        <div class="detail-inner">
+                            <p>A full day out to the Blue Hole, with three dives and lunch on the boat.</p>
+                            <dl class="facts">
+                                <div><dt>Time</dt><dd>11 h</dd></div>
+                                <div><dt>Level</dt><dd>Advanced</dd></div>
+                            </dl>
+                            <a class="button button-primary" href="contact.html">Book Blue Hole Day Trip</a>
+                        </div>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </section>
+    <section class="sites" id="sites" aria-labelledby="sites-title">
+        <article class="poster">
+            <div class="poster-frame">
+                <img src="https://images.unsplash.com/photo-1722761478075-720dc58e63d1?q=80&amp;w=1400&amp;auto=format&amp;fit=crop" width="1400" height="1050" alt="Aerial view of the Great Blue Hole, a dark circular sinkhole inside a ring of reef" loading="lazy">
+                <svg viewBox="0 0 400 300" aria-hidden="true">
+                    <g class="rings">
+                        <ellipse cx="225" cy="165" rx="96" ry="38"/>
+                        <ellipse cx="225" cy="165" rx="72" ry="28"/>
+                        <ellipse cx="225" cy="165" rx="48" ry="19"/>
+                        <ellipse cx="225" cy="165" rx="24" ry="9"/>
+                    </g>
+                    <g class="ring-labels">
+                        <text x="326" y="167">0 m</text>
+                        <text x="302" y="167">10</text>
+                        <text x="278" y="167">20</text>
+                        <text x="254" y="167">30</text>
+                        <text x="233" y="150">40 m</text>
+                    </g>
+                    <circle class="ring-center" cx="225" cy="165" r="3"/>
+                </svg>
+            </div>
+            <div class="poster-copy">
+                <p class="poster-kicker">Lighthouse Reef</p>
+                <h2 id="sites-title">Great Blue Hole</h2>
+                <p class="poster-lede">A sinkhole 300 m across, ringed by reef. We drop to the stalactites and come back up.</p>
+                <dl class="poster-facts">
+                    <div><dt>Down to</dt><dd>40 m</dd></div>
+                    <div><dt>Level</dt><dd>Advanced</dd></div>
+                    <div><dt>Day trip</dt><dd>11 h</dd></div>
+                </dl>
+                <a class="button button-primary" href="#packages">Book the Blue Hole day trip</a>
+            </div>
+        </article>
+        <h3 class="sites-more">Also from Caye Caulker</h3>
+        <ul class="other-sites">
+            <li>
+                <img src="https://images.unsplash.com/photo-1582395960020-3b30f1b49004?q=80&amp;w=800&amp;auto=format&amp;fit=crop" width="800" height="533" alt="" loading="lazy">
+                <h4 id="site-shark">Shark Ray Alley</h4>
+                <p>Down to 5 m / Beginner</p>
+                <a class="button button-secondary" href="#packages" aria-describedby="site-shark">Book tour</a>
+            </li>
+            <li>
+                <img src="https://images.unsplash.com/photo-1640806878940-1e3e0eea2afe?q=80&amp;w=800&amp;auto=format&amp;fit=crop" width="800" height="533" alt="" loading="lazy">
+                <h4 id="site-coral">Coral Gardens</h4>
+                <p>5 to 12 m / Open Water</p>
+                <a class="button button-secondary" href="#packages" aria-describedby="site-coral">Book tour</a>
+            </li>
+            <li>
+                <img src="https://images.unsplash.com/photo-1543933756-f1e68f5a3a80?q=80&amp;w=800&amp;auto=format&amp;fit=crop" width="800" height="533" alt="" loading="lazy">
+                <h4 id="site-hol-chan">Hol Chan Marine Reserve</h4>
+                <p>6 to 18 m / Open Water</p>
+                <a class="button button-secondary" href="#packages" aria-describedby="site-hol-chan">Book tour</a>
+            </li>
+        </ul>
+    </section>
+    <section class="faq" id="faq" aria-labelledby="faq-title">
+        <h2 id="faq-title">The short answers.</h2>
+        <ul class="answers">
+            <li>
+                <h3>Do I need to be certified?</h3>
+                <p class="answer">Not always</p>
+                <p class="answer-detail">Not for Discover Scuba. Reef dives need a card, and the Blue Hole needs Advanced.</p>
+            </li>
+            <li>
+                <h3>How old do I need to be?</h3>
+                <p class="answer">10 and up</p>
+                <p class="answer-detail">Younger children can snorkel with us.</p>
+            </li>
+            <li>
+                <h3>How well do I need to swim?</h3>
+                <p class="answer">200 m</p>
+                <p class="answer-detail">For courses: 200 m, plus a 10-minute float.</p>
+            </li>
+            <li>
+                <h3>What if the weather is bad?</h3>
+                <p class="answer">We reschedule</p>
+                <p class="answer-detail">We move your dive to another day, or refund it.</p>
+            </li>
+            <li>
+                <h3>When can I fly?</h3>
+                <p class="answer">18 hours</p>
+                <p class="answer-detail">At least 18 hours after your last dive.</p>
+            </li>
+            <li>
+                <h3>Is gear included?</h3>
+                <p class="answer">Mostly</p>
+                <p class="answer-detail">Tanks, weights and guide, yes. Mask, fins and wetsuit are rentals.</p>
+            </li>
+        </ul>
+    </section>
+    <section class="cta" aria-labelledby="cta-title">
+        <div class="cta-copy">
+            <h2 id="cta-title">Ready when you are.</h2>
+            <p>Pick a day, tell us your level, and we will take care of the rest.</p>
+            <div class="cta-actions">
+                <a class="button button-primary" href="contact.html">Book my dive today</a>
+                <a class="button button-secondary" href="contact.html">Contact us</a>
+            </div>
+        </div>
+        <svg class="cta-flag" viewBox="0 0 100 80" aria-hidden="true">
+            <rect width="100" height="80"/>
+            <path d="M-12.5 90 112.5-10"/>
+        </svg>
+    </section>
+    <footer class="site-footer">
+        <div class="footer-bubbles" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="footer-body">
+            <div class="footer-brand">
+                <a class="brand" href="./">
+                    <img src="images/logo.png" width="136" height="130" alt="">
+                    Reef Friendly Divers
+                </a>
+                <ul class="chips">
+                    <li><a class="chip" href="tel:+5010000000"><i class="bi bi-telephone" aria-hidden="true"></i>Call us</a></li>
+                    <li><a class="chip" href="mailto:info@example.com"><i class="bi bi-envelope" aria-hidden="true"></i>Email us</a></li>
+                    <li><a class="chip" href="https://wa.me/5010000000"><i class="bi bi-whatsapp" aria-hidden="true"></i>WhatsApp</a></li>
+                    <li><a class="chip" href="https://www.instagram.com/"><i class="bi bi-instagram" aria-hidden="true"></i>Instagram</a></li>
+                    <li><a class="chip" href="https://www.facebook.com/"><i class="bi bi-facebook" aria-hidden="true"></i>Facebook</a></li>
+                    <li><a class="chip" href="https://www.tripadvisor.com/"><svg viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M12.006 4.295c-2.67 0-5.338.784-7.645 2.353H0l1.963 2.135a5.997 5.997 0 0 0 4.04 10.43 5.976 5.976 0 0 0 4.075-1.6L12 19.705l1.922-2.09a5.972 5.972 0 0 0 4.072 1.598 6 6 0 0 0 6-5.998 5.982 5.982 0 0 0-1.957-4.432L24 6.648h-4.35a13.573 13.573 0 0 0-7.644-2.353zM12 6.255c1.531 0 3.063.303 4.504.903C13.943 8.138 12 10.43 12 13.1c0-2.671-1.942-4.962-4.504-5.942A11.72 11.72 0 0 1 12 6.256zM6.002 9.157a4.059 4.059 0 1 1 0 8.118 4.059 4.059 0 0 1 0-8.118zm11.992.002a4.057 4.057 0 1 1 .003 8.115 4.057 4.057 0 0 1-.003-8.115zm-11.992 1.93a2.128 2.128 0 0 0 0 4.256 2.128 2.128 0 0 0 0-4.256zm11.992 0a2.128 2.128 0 0 0 0 4.256 2.128 2.128 0 0 0 0-4.256z"/></svg>Tripadvisor</a></li>
+                </ul>
+            </div>
+            <nav class="footer-nav" aria-label="Footer">
+                <a href="services.html">Services</a>
+                <a href="about.html">About Us</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="#sites">Belize's Waters</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="footer-book">
+                <p class="footer-location"><i class="bi bi-geo-alt-fill" aria-hidden="true"></i>Caye Caulker, Belize</p>
+                <a class="button button-secondary" href="contact.html">Book my dive today</a>
+                <div class="button-bubbles" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="legal">
+            <p>&copy; 2026 Reef Friendly Divers</p>
+            <p>Powered by <a href="https://ctechintl.com" target="_blank" rel="noopener">Ctech International</a></p>
+        </div>
+    </footer>
 </body>
 </html>
