@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reef Friendly Divers | Caye Caulker, Belize</title>
+    <link rel="icon" href="favicon.ico">
     <meta name="description" content="Guided scuba dives on the Belize Barrier Reef, leaving from Caye Caulker.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +21,7 @@
         <canvas class="particles" aria-hidden="true"></canvas>
         <header class="site-header">
             <a class="brand" href="./">
-                <img src="images/logo.png" width="136" height="130" alt="">
+                <img src="images/logo-ray.png" width="481" height="370" alt="">
                 Reef Friendly Divers
             </a>
             <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Menu">
@@ -29,10 +30,10 @@
             </button>
             <div class="site-menu" id="site-menu">
                 <nav class="site-nav">
-                    <a href="services.html">Services</a>
+                    <a href="./" aria-current="page">Home</a>
+                    <a href="dives.html">Dives</a>
                     <a href="about.html">About Us</a>
                     <a href="gallery.html">Gallery</a>
-                    <a href="#sites">Belize's Waters</a>
                     <a href="contact.html">Contact</a>
                 </nav>
                 <a class="button button-secondary" href="contact.html">Book now</a>
@@ -241,7 +242,7 @@
                                 <div><dt>Time</dt><dd>3 h</dd></div>
                                 <div><dt>Level</dt><dd>Beginner</dd></div>
                             </dl>
-                            <a class="button button-primary" href="contact.html">Book Discover Scuba</a>
+                            <a class="button button-primary" href="contact.html?tour=discover">Book Discover Scuba</a>
                         </div>
                     </div>
                 </li>
@@ -260,7 +261,7 @@
                                 <div><dt>Time</dt><dd>3 days</dd></div>
                                 <div><dt>Level</dt><dd>Beginner</dd></div>
                             </dl>
-                            <a class="button button-primary" href="contact.html">Book Open Water Course</a>
+                            <a class="button button-primary" href="contact.html?tour=certify">Book Open Water Course</a>
                         </div>
                     </div>
                 </li>
@@ -279,7 +280,7 @@
                                 <div><dt>Time</dt><dd>4 h</dd></div>
                                 <div><dt>Level</dt><dd>Open Water</dd></div>
                             </dl>
-                            <a class="button button-primary" href="contact.html">Book Reef Dive</a>
+                            <a class="button button-primary" href="contact.html?tour=explore">Book Reef Dive</a>
                         </div>
                     </div>
                 </li>
@@ -298,7 +299,7 @@
                                 <div><dt>Time</dt><dd>11 h</dd></div>
                                 <div><dt>Level</dt><dd>Advanced</dd></div>
                             </dl>
-                            <a class="button button-primary" href="contact.html">Book Blue Hole Day Trip</a>
+                            <a class="button button-primary" href="contact.html?tour=blue-hole">Book Blue Hole Day Trip</a>
                         </div>
                     </div>
                 </li>
@@ -335,7 +336,7 @@
                     <div><dt>Level</dt><dd>Advanced</dd></div>
                     <div><dt>Day trip</dt><dd>11 h</dd></div>
                 </dl>
-                <a class="button button-primary" href="#packages">Book the Blue Hole day trip</a>
+                <a class="button button-primary" href="contact.html?tour=blue-hole">Book the Blue Hole day trip</a>
             </div>
         </article>
         <h3 class="sites-more">Also from Caye Caulker</h3>
@@ -344,19 +345,19 @@
                 <img src="https://images.unsplash.com/photo-1582395960020-3b30f1b49004?q=80&amp;w=800&amp;auto=format&amp;fit=crop" width="800" height="533" alt="" loading="lazy">
                 <h4 id="site-shark">Shark Ray Alley</h4>
                 <p>Down to 5 m / Beginner</p>
-                <a class="button button-secondary" href="#packages" aria-describedby="site-shark">Book tour</a>
+                <a class="button button-secondary" href="contact.html?tour=shark-ray" aria-describedby="site-shark">Book tour</a>
             </li>
             <li>
                 <img src="https://images.unsplash.com/photo-1640806878940-1e3e0eea2afe?q=80&amp;w=800&amp;auto=format&amp;fit=crop" width="800" height="533" alt="" loading="lazy">
                 <h4 id="site-coral">Coral Gardens</h4>
                 <p>5 to 12 m / Open Water</p>
-                <a class="button button-secondary" href="#packages" aria-describedby="site-coral">Book tour</a>
+                <a class="button button-secondary" href="contact.html?tour=coral-gardens" aria-describedby="site-coral">Book tour</a>
             </li>
             <li>
                 <img src="https://images.unsplash.com/photo-1543933756-f1e68f5a3a80?q=80&amp;w=800&amp;auto=format&amp;fit=crop" width="800" height="533" alt="" loading="lazy">
                 <h4 id="site-hol-chan">Hol Chan Marine Reserve</h4>
                 <p>6 to 18 m / Open Water</p>
-                <a class="button button-secondary" href="#packages" aria-describedby="site-hol-chan">Book tour</a>
+                <a class="button button-secondary" href="contact.html?tour=hol-chan" aria-describedby="site-hol-chan">Book tour</a>
             </li>
         </ul>
     </section>
@@ -401,13 +402,10 @@
             <p>Pick a day, tell us your level, and we will take care of the rest.</p>
             <div class="cta-actions">
                 <a class="button button-primary" href="contact.html">Book my dive today</a>
-                <a class="button button-secondary" href="contact.html">Contact us</a>
+                <a class="button button-secondary" href="contact.html?topic=ask">Contact us</a>
             </div>
         </div>
-        <svg class="cta-flag" viewBox="0 0 100 80" aria-hidden="true">
-            <rect width="100" height="80"/>
-            <path d="M-12.5 90 112.5-10"/>
-        </svg>
+        <img class="cta-logo" src="images/logo.png" width="612" height="517" alt="Reef Friendly Divers, Caye Caulker, Belize" loading="lazy">
     </section>
     <footer class="site-footer">
         <div class="footer-bubbles" aria-hidden="true">
@@ -431,7 +429,7 @@
         <div class="footer-body">
             <div class="footer-brand">
                 <a class="brand" href="./">
-                    <img src="images/logo.png" width="136" height="130" alt="">
+                    <img src="images/logo-ray.png" width="481" height="370" alt="">
                     Reef Friendly Divers
                 </a>
                 <ul class="chips">
@@ -443,15 +441,15 @@
                     <li><a class="chip" href="https://www.tripadvisor.com/"><svg viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M12.006 4.295c-2.67 0-5.338.784-7.645 2.353H0l1.963 2.135a5.997 5.997 0 0 0 4.04 10.43 5.976 5.976 0 0 0 4.075-1.6L12 19.705l1.922-2.09a5.972 5.972 0 0 0 4.072 1.598 6 6 0 0 0 6-5.998 5.982 5.982 0 0 0-1.957-4.432L24 6.648h-4.35a13.573 13.573 0 0 0-7.644-2.353zM12 6.255c1.531 0 3.063.303 4.504.903C13.943 8.138 12 10.43 12 13.1c0-2.671-1.942-4.962-4.504-5.942A11.72 11.72 0 0 1 12 6.256zM6.002 9.157a4.059 4.059 0 1 1 0 8.118 4.059 4.059 0 0 1 0-8.118zm11.992.002a4.057 4.057 0 1 1 .003 8.115 4.057 4.057 0 0 1-.003-8.115zm-11.992 1.93a2.128 2.128 0 0 0 0 4.256 2.128 2.128 0 0 0 0-4.256zm11.992 0a2.128 2.128 0 0 0 0 4.256 2.128 2.128 0 0 0 0-4.256z"/></svg>Tripadvisor</a></li>
                 </ul>
             </div>
-            <nav class="footer-nav" aria-label="Footer">
-                <a href="services.html">Services</a>
+            <nav class="footer-nav" aria-labelledby="footer-pages">
+                <h2 id="footer-pages">Pages</h2>
+                <a href="dives.html">Dives</a>
                 <a href="about.html">About Us</a>
                 <a href="gallery.html">Gallery</a>
-                <a href="#sites">Belize's Waters</a>
                 <a href="contact.html">Contact</a>
             </nav>
             <div class="footer-book">
-                <p class="footer-location"><i class="bi bi-geo-alt-fill" aria-hidden="true"></i>Caye Caulker, Belize</p>
+                <a class="footer-location" href="https://www.google.com/maps/dir/?api=1&amp;destination=Reef+Friendly+Divers&amp;destination_place_id=ChIJh_zEcbuNXI8RzCWSCmuDcxk" target="_blank" rel="noopener"><i class="bi bi-geo-alt-fill" aria-hidden="true"></i>Caye Caulker, Belize <span class="visually-hidden">(get directions on Google Maps)</span></a>
                 <a class="button button-secondary" href="contact.html">Book my dive today</a>
                 <div class="button-bubbles" aria-hidden="true">
                     <span></span>

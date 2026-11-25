@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact and Booking | Reef Friendly Divers</title>
+    <link rel="icon" href="favicon.ico">
+    <meta name="description" content="Request a dive or tour with Reef Friendly Divers in Caye Caulker, Belize, or ask us a question.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&amp;family=Barlow+Condensed:wght@700&amp;display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/menu.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/libphonenumber-js@1.13.15/bundle/libphonenumber-max.js" integrity="sha384-KFpFw4Q7EIpeK/WJ3azDRjpDeYmDLF9DdzBb3LMPtHHFi/99I94irctbZUeBVBQv" crossorigin="anonymous" defer></script>
+    <script src="js/contact.js" defer></script>
+    <script src="js/phone.js" defer></script>
+</head>
+<body class="contact-page">
+    <header class="site-header">
+        <a class="brand" href="./">
+            <img src="images/logo-ray.png" width="481" height="370" alt="">
+            Reef Friendly Divers
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Menu">
+            <i class="bi bi-list" aria-hidden="true"></i>
+            <i class="bi bi-x-lg" aria-hidden="true"></i>
+        </button>
+        <div class="site-menu" id="site-menu">
+            <nav class="site-nav">
+                <a href="./">Home</a>
+                <a href="dives.html">Dives</a>
+                <a href="about.html">About Us</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html" aria-current="page">Contact</a>
+            </nav>
+            <a class="button button-secondary" href="contact.html">Book now</a>
+        </div>
+    </header>
+    <main>
+        <div class="contact">
+            <div class="contact-panel">
+                <img class="contact-photo" src="https://images.pexels.com/photos/29070971/pexels-photo-29070971.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200" alt="">
+                <div class="contact-copy">
+                    <h1>Say hello from dry land.</h1>
+                    <div class="picked-tour" aria-live="polite">
+                        <p class="picked-meta">3 h / down to 12 m / Beginner</p>
+                        <p class="picked-price">US$95</p>
+                    </div>
+                    <a class="footer-location" href="https://www.google.com/maps/dir/?api=1&amp;destination=Reef+Friendly+Divers&amp;destination_place_id=ChIJh_zEcbuNXI8RzCWSCmuDcxk" target="_blank" rel="noopener"><i class="bi bi-geo-alt-fill" aria-hidden="true"></i>Caye Caulker, Belize <span class="visually-hidden">(get directions on Google Maps)</span></a>
+                    <ul class="chips">
+                        <li><a class="chip" href="tel:+5010000000"><i class="bi bi-telephone" aria-hidden="true"></i>Call us</a></li>
+                        <li><a class="chip" href="mailto:info@example.com"><i class="bi bi-envelope" aria-hidden="true"></i>Email us</a></li>
+                        <li><a class="chip" href="https://wa.me/5010000000"><i class="bi bi-whatsapp" aria-hidden="true"></i>WhatsApp</a></li>
+                        <li><a class="chip" href="https://www.instagram.com/"><i class="bi bi-instagram" aria-hidden="true"></i>Instagram</a></li>
+                        <li><a class="chip" href="https://www.facebook.com/"><i class="bi bi-facebook" aria-hidden="true"></i>Facebook</a></li>
+                        <li><a class="chip" href="https://www.tripadvisor.com/"><svg viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M12.006 4.295c-2.67 0-5.338.784-7.645 2.353H0l1.963 2.135a5.997 5.997 0 0 0 4.04 10.43 5.976 5.976 0 0 0 4.075-1.6L12 19.705l1.922-2.09a5.972 5.972 0 0 0 4.072 1.598 6 6 0 0 0 6-5.998 5.982 5.982 0 0 0-1.957-4.432L24 6.648h-4.35a13.573 13.573 0 0 0-7.644-2.353zM12 6.255c1.531 0 3.063.303 4.504.903C13.943 8.138 12 10.43 12 13.1c0-2.671-1.942-4.962-4.504-5.942A11.72 11.72 0 0 1 12 6.256zM6.002 9.157a4.059 4.059 0 1 1 0 8.118 4.059 4.059 0 0 1 0-8.118zm11.992.002a4.057 4.057 0 1 1 .003 8.115 4.057 4.057 0 0 1-.003-8.115zm-11.992 1.93a2.128 2.128 0 0 0 0 4.256 2.128 2.128 0 0 0 0-4.256zm11.992 0a2.128 2.128 0 0 0 0 4.256 2.128 2.128 0 0 0 0-4.256z"/></svg>Tripadvisor</a></li>
+                    </ul>
+                </div>
+            </div>
+            <form class="booking-form" method="post">
+                <fieldset class="topic">
+                    <legend class="visually-hidden">What is this about?</legend>
+                    <label><input class="visually-hidden" type="radio" name="topic" value="book" checked>Book a dive</label>
+                    <label><input class="visually-hidden" type="radio" name="topic" value="ask">Ask a question</label>
+                </fieldset>
+                <div class="form-progress" hidden>
+                    <div class="progress-track" aria-hidden="true">
+                        <span class="progress-fill"></span>
+                        <img class="progress-ray" src="images/logo-ray.png" width="481" height="370" alt="">
+                    </div>
+                    <ol class="progress-steps">
+                        <li>
+                            <button type="button">
+                                <span class="progress-dot"><span>1</span><i class="bi bi-check-lg" aria-hidden="true"></i></span>
+                                Dive
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button">
+                                <span class="progress-dot"><span>2</span><i class="bi bi-check-lg" aria-hidden="true"></i></span>
+                                Trip
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button">
+                                <span class="progress-dot"><span>3</span><i class="bi bi-check-lg" aria-hidden="true"></i></span>
+                                You
+                            </button>
+                        </li>
+                    </ol>
+                </div>
+                <div class="form-steps">
+                    <section class="form-step booking-step" data-next="Choose a date" aria-labelledby="step-dive">
+                        <h2 id="step-dive" tabindex="-1">Pick your dive</h2>
+                        <fieldset class="booking-fields">
+                            <legend class="visually-hidden">Dive or tour</legend>
+                            <fieldset class="tour-group">
+                                <legend>Dives and courses</legend>
+                                <div class="tour-cards">
+                                    <label class="tour-card">
+                                        <input class="visually-hidden" type="radio" name="tour" value="discover" data-photo="https://images.pexels.com/photos/29070971/pexels-photo-29070971.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200" checked>
+                                        <span class="tour-name">Discover Scuba</span>
+                                        <span class="tour-meta">3 h / down to 12 m / Beginner</span>
+                                        <span class="tour-price">US$95</span>
+                                    </label>
+                                    <label class="tour-card">
+                                        <input class="visually-hidden" type="radio" name="tour" value="certify" data-photo="https://images.pexels.com/photos/29070971/pexels-photo-29070971.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200">
+                                        <span class="tour-name">Open Water Course</span>
+                                        <span class="tour-meta">3 days / down to 18 m / Beginner</span>
+                                        <span class="tour-price">US$420</span>
+                                    </label>
+                                    <label class="tour-card">
+                                        <input class="visually-hidden" type="radio" name="tour" value="explore" data-photo="https://images.unsplash.com/photo-1640806878940-1e3e0eea2afe?q=80&amp;w=1200&amp;auto=format&amp;fit=crop">
+                                        <span class="tour-name">Reef Dive</span>
+                                        <span class="tour-meta">4 h / down to 18 m / Open Water</span>
+                                        <span class="tour-price">US$130</span>
+                                    </label>
+                                    <label class="tour-card">
+                                        <input class="visually-hidden" type="radio" name="tour" value="blue-hole" data-photo="https://images.unsplash.com/photo-1722761478075-720dc58e63d1?q=80&amp;w=1200&amp;auto=format&amp;fit=crop">
+                                        <span class="tour-name">Blue Hole Day Trip</span>
+                                        <span class="tour-meta">11 h / down to 40 m / Advanced</span>
+                                        <span class="tour-price">US$380</span>
+                                    </label>
+                                </div>
+                            </fieldset>
+                            <fieldset class="tour-group">
+                                <legend>Tours from Caye Caulker</legend>
+                                <div class="tour-cards">
+                                    <label class="tour-card">
+                                        <input class="visually-hidden" type="radio" name="tour" value="shark-ray" data-photo="https://images.unsplash.com/photo-1582395960020-3b30f1b49004?q=80&amp;w=1200&amp;auto=format&amp;fit=crop">
+                                        <span class="tour-name">Shark Ray Alley</span>
+                                        <span class="tour-meta">Down to 5 m / Beginner</span>
+                                    </label>
+                                    <label class="tour-card">
+                                        <input class="visually-hidden" type="radio" name="tour" value="coral-gardens" data-photo="https://images.unsplash.com/photo-1640806878940-1e3e0eea2afe?q=80&amp;w=1200&amp;auto=format&amp;fit=crop">
+                                        <span class="tour-name">Coral Gardens</span>
+                                        <span class="tour-meta">5 to 12 m / Open Water</span>
+                                    </label>
+                                    <label class="tour-card">
+                                        <input class="visually-hidden" type="radio" name="tour" value="hol-chan" data-photo="https://images.unsplash.com/photo-1543933756-f1e68f5a3a80?q=80&amp;w=1200&amp;auto=format&amp;fit=crop">
+                                        <span class="tour-name">Hol Chan Marine Reserve</span>
+                                        <span class="tour-meta">6 to 18 m / Open Water</span>
+                                    </label>
+                                </div>
+                            </fieldset>
+                        </fieldset>
+                    </section>
+                    <section class="form-step booking-step" data-next="Add your details" aria-labelledby="step-trip">
+                        <h2 id="step-trip" tabindex="-1">When are you diving?</h2>
+                        <fieldset class="booking-fields">
+                            <legend class="visually-hidden">Trip details</legend>
+                            <div class="form-grid">
+                                <div class="field">
+                                    <label for="date">Preferred date</label>
+                                    <input id="date" name="date" type="date" required>
+                                </div>
+                                <div class="field">
+                                    <label for="divers">Number of divers</label>
+                                    <input id="divers" name="divers" type="number" min="1" value="2" inputmode="numeric" required>
+                                </div>
+                                <div class="field field-wide">
+                                    <label for="level">Certification</label>
+                                    <select id="level" name="level">
+                                        <option>Not certified yet</option>
+                                        <option>Open Water</option>
+                                        <option>Advanced Open Water</option>
+                                        <option>Rescue or higher</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </section>
+                    <section class="form-step" aria-labelledby="step-you">
+                        <h2 id="step-you" tabindex="-1">Who should we reply to?</h2>
+                        <div class="form-grid">
+                            <div class="field">
+                                <label for="name">Name</label>
+                                <input id="name" name="name" type="text" autocomplete="name" required>
+                            </div>
+                            <div class="field">
+                                <label for="email">Email</label>
+                                <input id="email" name="email" type="email" autocomplete="email" required>
+                            </div>
+                            <div class="field field-wide">
+                                <label for="phone">Phone or WhatsApp (optional)</label>
+                                <div class="phone-row">
+                                    <select id="phone-country" name="phone-country" autocomplete="country" aria-label="Country calling code">
+                                        <option value="US" selected>+1 United States</option>
+                                    </select>
+                                    <input id="phone" name="phone" type="tel" autocomplete="tel-national" aria-describedby="phone-error">
+                                </div>
+                                <p class="field-error" id="phone-error" aria-live="polite"></p>
+                            </div>
+                            <div class="field field-wide">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="3"></textarea>
+                            </div>
+                        </div>
+                        <p class="form-pick">Booking: <strong>Discover Scuba, US$95</strong> <span></span></p>
+                        <p class="form-note">We reply by email.</p>
+                    </section>
+                </div>
+                <div class="step-actions">
+                    <button class="button button-secondary step-back" type="button" hidden>Back</button>
+                    <button class="button button-primary step-next" type="submit">Send request</button>
+                </div>
+                <p class="form-status" role="status"></p>
+            </form>
+        </div>
+        <section class="find" aria-labelledby="find-title">
+            <div>
+                <h2 id="find-title">Find us.</h2>
+                <address>
+                    <ul class="find-list">
+                    <li>
+                        <a class="find-row" href="https://www.google.com/maps/dir/?api=1&amp;destination=Reef+Friendly+Divers&amp;destination_place_id=ChIJh_zEcbuNXI8RzCWSCmuDcxk" target="_blank" rel="noopener">
+                            <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+                            <span class="find-label">Address</span>
+                            <span>Avenida Hicaco, Caye Caulker, Belize <span class="visually-hidden">(get directions on Google Maps)</span></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="find-row" href="tel:+5010000000">
+                            <i class="bi bi-telephone" aria-hidden="true"></i>
+                            <span class="find-label">Phone</span>
+                            <span>+501 000-0000</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="find-row" href="https://wa.me/5010000000">
+                            <i class="bi bi-whatsapp" aria-hidden="true"></i>
+                            <span class="find-label">WhatsApp</span>
+                            <span>+501 000-0000</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="find-row" href="mailto:info@example.com">
+                            <i class="bi bi-envelope" aria-hidden="true"></i>
+                            <span class="find-label">Email</span>
+                            <span>info@example.com</span>
+                        </a>
+                    </li>
+                    </ul>
+                </address>
+                <ul class="chips">
+                    <li><a class="chip" href="https://www.instagram.com/"><i class="bi bi-instagram" aria-hidden="true"></i>Instagram</a></li>
+                    <li><a class="chip" href="https://www.facebook.com/"><i class="bi bi-facebook" aria-hidden="true"></i>Facebook</a></li>
+                    <li><a class="chip" href="https://www.tripadvisor.com/"><svg viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M12.006 4.295c-2.67 0-5.338.784-7.645 2.353H0l1.963 2.135a5.997 5.997 0 0 0 4.04 10.43 5.976 5.976 0 0 0 4.075-1.6L12 19.705l1.922-2.09a5.972 5.972 0 0 0 4.072 1.598 6 6 0 0 0 6-5.998 5.982 5.982 0 0 0-1.957-4.432L24 6.648h-4.35a13.573 13.573 0 0 0-7.644-2.353zM12 6.255c1.531 0 3.063.303 4.504.903C13.943 8.138 12 10.43 12 13.1c0-2.671-1.942-4.962-4.504-5.942A11.72 11.72 0 0 1 12 6.256zM6.002 9.157a4.059 4.059 0 1 1 0 8.118 4.059 4.059 0 0 1 0-8.118zm11.992.002a4.057 4.057 0 1 1 .003 8.115 4.057 4.057 0 0 1-.003-8.115zm-11.992 1.93a2.128 2.128 0 0 0 0 4.256 2.128 2.128 0 0 0 0-4.256zm11.992 0a2.128 2.128 0 0 0 0 4.256 2.128 2.128 0 0 0 0-4.256z"/></svg>Tripadvisor</a></li>
+                </ul>
+            </div>
+            <iframe title="Reef Friendly Divers on Google Maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d974835.6442633019!2d-89.06524778073295!3d17.366055314060908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5c8dbb71c4fc87%3A0x1973836b0a9225cc!2sReef%20Friendly%20Divers!5e0!3m2!1sen!2sbz!4v1795633854138!5m2!1sen!2sbz" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-bubbles" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="footer-body">
+            <div class="footer-brand">
+                <a class="brand" href="./">
+                    <img src="images/logo-ray.png" width="481" height="370" alt="">
+                    Reef Friendly Divers
+                </a>
+                <ul class="chips">
+                    <li><a class="chip" href="tel:+5010000000"><i class="bi bi-telephone" aria-hidden="true"></i>Call us</a></li>
+                    <li><a class="chip" href="mailto:info@example.com"><i class="bi bi-envelope" aria-hidden="true"></i>Email us</a></li>
+                    <li><a class="chip" href="https://wa.me/5010000000"><i class="bi bi-whatsapp" aria-hidden="true"></i>WhatsApp</a></li>
+                    <li><a class="chip" href="https://www.instagram.com/"><i class="bi bi-instagram" aria-hidden="true"></i>Instagram</a></li>
+                    <li><a class="chip" href="https://www.facebook.com/"><i class="bi bi-facebook" aria-hidden="true"></i>Facebook</a></li>
+                    <li><a class="chip" href="https://www.tripadvisor.com/"><svg viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M12.006 4.295c-2.67 0-5.338.784-7.645 2.353H0l1.963 2.135a5.997 5.997 0 0 0 4.04 10.43 5.976 5.976 0 0 0 4.075-1.6L12 19.705l1.922-2.09a5.972 5.972 0 0 0 4.072 1.598 6 6 0 0 0 6-5.998 5.982 5.982 0 0 0-1.957-4.432L24 6.648h-4.35a13.573 13.573 0 0 0-7.644-2.353zM12 6.255c1.531 0 3.063.303 4.504.903C13.943 8.138 12 10.43 12 13.1c0-2.671-1.942-4.962-4.504-5.942A11.72 11.72 0 0 1 12 6.256zM6.002 9.157a4.059 4.059 0 1 1 0 8.118 4.059 4.059 0 0 1 0-8.118zm11.992.002a4.057 4.057 0 1 1 .003 8.115 4.057 4.057 0 0 1-.003-8.115zm-11.992 1.93a2.128 2.128 0 0 0 0 4.256 2.128 2.128 0 0 0 0-4.256zm11.992 0a2.128 2.128 0 0 0 0 4.256 2.128 2.128 0 0 0 0-4.256z"/></svg>Tripadvisor</a></li>
+                </ul>
+            </div>
+            <nav class="footer-nav" aria-labelledby="footer-pages">
+                <h2 id="footer-pages">Pages</h2>
+                <a href="dives.html">Dives</a>
+                <a href="about.html">About Us</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html" aria-current="page">Contact</a>
+            </nav>
+            <div class="footer-book">
+                <a class="footer-location" href="https://www.google.com/maps/dir/?api=1&amp;destination=Reef+Friendly+Divers&amp;destination_place_id=ChIJh_zEcbuNXI8RzCWSCmuDcxk" target="_blank" rel="noopener"><i class="bi bi-geo-alt-fill" aria-hidden="true"></i>Caye Caulker, Belize <span class="visually-hidden">(get directions on Google Maps)</span></a>
+                <a class="button button-secondary" href="contact.html">Book my dive today</a>
+                <div class="button-bubbles" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="legal">
+            <p>&copy; 2026 Reef Friendly Divers</p>
+            <p>Powered by <a href="https://ctechintl.com" target="_blank" rel="noopener">Ctech International</a></p>
+        </div>
+    </footer>
+</body>
+</html>
